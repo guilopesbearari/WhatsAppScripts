@@ -30,7 +30,8 @@ async function enviarScript(scriptText, delay = 1000) {
 
     const sendButton =
       main.querySelector(`[data-testid="send"]`) ||
-      main.querySelector(`[data-icon="send"]`);
+      main.querySelector(`[data-icon="send"]`) ||
+      main.querySelector(`[data-tab="11"]`)
     sendButton.click();
 
     if (lines.indexOf(line) !== lines.length - 1) {
